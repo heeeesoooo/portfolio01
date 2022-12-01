@@ -1,0 +1,344 @@
+* {
+    outline: 1px solid tomato
+}
+
+/* -------------topBanner---------- */
+
+
+.topBanner {
+    position: relative;
+    background: #f9f9f9;
+    padding: 20px 0;
+    transition: padding 0.5s;
+}
+
+.topBanner.on {
+    height: 0;
+    padding: 0 0;
+    overflow: hidden;
+}
+
+.topBanner .inner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topBanner h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.topBanner i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+}
+
+.topBanner a {
+    margin: 0 0 0 30px;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+/* -------------header---------- */
+
+.header .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.header .gnb {
+    margin: 0 auto;
+}
+
+.header .gnb>ul {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    text-align: center;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .gnb>ul>li>ul {
+    position: absolute;
+    top: 152px;
+    left: 50%;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    z-index: 999;
+    display: none;
+}
+
+.header .gnb>ul>li:hover>ul {
+    border-top: 3px solid #444444;
+    display: block;
+}
+
+.inner .right {
+    margin: 0 0 0 40px;
+    font-size: 20px;
+}
+
+/* -------------main----------- */
+
+/* -------------mainSlide----------- */
+
+.mainSlide img {
+    width: 100%;
+}
+
+.mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: none;
+    border: none;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+
+.mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -700px;
+}
+
+.mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+}
+
+.mainSlide .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mainSlide .slick-dots>li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    margin: 0 2px;
+    border-radius: 50%;
+}
+
+.mainSlide .slick-dots>li.slick-active {
+    width: 30px;
+    height: 10px;
+    background: #444444;
+    border-radius: 10px;
+
+}
+
+.mainSlide .slick-dots>li button {
+    display: none;
+}
+
+/* -------------mainProduct----------- */
+.mainProduct {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.mainProduct p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.mainProduct h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.mainProduct .inner {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.mainProduct img {
+    width: 100%;
+}
+
+.mainProduct figure {
+    padding: 0 15px 15px 15px;
+}
+
+.mainProduct .img_box {
+    margin: 0 0 15px 0;
+}
+
+.mainProduct .main_pro_slide {
+    margin: 0 -15px;
+}
+
+.mainProduct strong {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.mainProduct figure a {
+    display: inline-block;
+    outline: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+.mainProduct a:hover {
+    background: #444444;
+    color: #fff;
+}
+
+.mainProduct .arrows a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+}
+
+.mainProduct .arrows .prev {
+    background: url(../img/prev.png);
+    margin: 0 0 0 -700px;
+}
+
+.mainProduct .arrows .next {
+    background: url(../img/next.png);
+    margin: 0 0 0 700px;
+}
+
+/* -------------mainBanner----------- */
+
+.mainBanner {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/mainBanner01.jpg)no-repeat fixed center center/cover;
+}
+
+.mainBanner p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+    text-shadow: 0 1px 1px #000000;
+}
+
+.mainBanner h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-shadow: 0 3px 3px #000000;
+}
+
+/* -------------mainContent----------- */
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent h3 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.mainContent h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.mainContent .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContent figure {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.mainContent figure img {
+    width: 100%;
+}
+
+.mainContent .img_box {
+    margin: 0 0 20px 0;
+}
+
+.mainContent .inner figure p {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 5px 10px;
+    background: #ff8800;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 10px;
+}
+
+.mainContent .inner figure strong {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 3px 3px #000000;
+}
+
+.productRecomm {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.productRecomm .title {}
+
+.productRecomm .title p {}
+
+.productRecomm .title h2 {
+    font-size: 30px;
+}
+
+.productRecomm .inner .best_goods {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    flex-wrap: wrap;
+    right: 0;
+    text-align: center;
+}
