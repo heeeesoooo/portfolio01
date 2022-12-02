@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px solid tomato
-}
+} */
 
 /* -------------topBanner---------- */
 
@@ -292,11 +292,7 @@
     width: 100%;
 }
 
-.mainContent .img_box {
-    margin: 0 0 20px 0;
-}
-
-.mainContent .inner figure p {
+.mainContent .inner .img_box p {
     position: absolute;
     top: 15%;
     left: 50%;
@@ -308,7 +304,7 @@
     border-radius: 10px;
 }
 
-.mainContent .inner figure strong {
+.mainContent .inner .img_box strong {
     position: absolute;
     width: 100%;
     top: 20%;
@@ -320,18 +316,94 @@
     text-shadow: 0 3px 3px #000000;
 }
 
+.mainContent figure .blackbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.mainContent figure:hover .blackbox01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/soon02.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.mainContent figure:hover .blackbox02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/soon04.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.mainContent figure:hover .blackbox03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/soon06.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.mainContent figure .blackbox strong {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 30px;
+    font-weight: 700;
+    color: #000
+}
+
+.mainContent figure .blackbox p {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+
+/* -----------------productRecomm---------------- */
 .productRecomm {
     width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
     display: flex;
+    justify-content: space-between;
 }
 
-.productRecomm .title {}
-
-.productRecomm .title p {}
+.productRecomm .title p {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
 
 .productRecomm .title h2 {
     font-size: 30px;
+    font-weight: 600;
+}
+
+.productRecomm>.inner {
+    right: 0;
 }
 
 .productRecomm .inner .best_goods {
@@ -341,4 +413,92 @@
     flex-wrap: wrap;
     right: 0;
     text-align: center;
+}
+
+.productRecomm figure strong {
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.productRecomm .inner .img_box {
+    margin: 0 0 20px 0;
+}
+
+.productRecomm .inner .img_box:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* ------------------------------------------ */
+.footer {
+    background: #343a40;
+    color: #f8f9fa;
+    padding: 0 0 20px 0;
+}
+
+.footer .top {
+    line-height: 80px;
+    border-bottom: 1px solid #555;
+}
+
+.footer .top .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .top .p {
+    font-size: 0;
+}
+
+.footer .top .left li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.footer .top .left li~li::before {
+    content: "";
+    margin: 0 20px;
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: #ddd;
+}
+
+.footer .top .right {
+    display: flex;
+    gap: 2px;
+}
+
+.footer .top .right i {
+    font-size: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 50%;
+}
+
+
+.footer .bottom .inner {
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .bottom h2 {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.footer .bottom p {
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.footer .bottom address {
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 200;
 }
